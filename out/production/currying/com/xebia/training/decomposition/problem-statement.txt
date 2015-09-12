@@ -1,0 +1,15 @@
+Design a system that parses an expression. An expression contains an operator and two operands or it could simply be a value which would be
+a Number.
+
+e.g  5 + 4 - is an expression that represents Sum of two numbers
+
+
+System may be required to either print or evaluate the expressions.
+
+eval(5+4) = 9
+
+and show(5+4) = "5 + 4"
+
+Operations would be Sum, Product etc
+
+Design the class hierarchies
