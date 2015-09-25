@@ -15,6 +15,8 @@ object Expressions extends App {
 
   case class Div(left: Expr, right: Expr) extends Expr
 
+  case class Subtract(value: Expr, value1: Expr) extends Expr
+
 
   def eval(expr: Expr): Int = {
     expr match {
@@ -22,8 +24,10 @@ object Expressions extends App {
       case Sum(left, right) => eval(left) + eval(right)
       case Prod(left, right) => eval(left) * eval(right)
       case Div(left, right) => eval(left) / eval(right)
+      case Subtract(left,right) => eval(left) - eval(right)
     }
   }
+
 
   def show(expr: Expr): String = {
     expr match {
@@ -48,4 +52,6 @@ object Expressions extends App {
   println(eval(Div(Prod(Sum(Number(5), Number(7)), Number(6)), Number(8))))
 
 }
+
+
 
