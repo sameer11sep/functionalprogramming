@@ -27,8 +27,6 @@ object BubbleSort extends App {
 
   implicit def gtS(l: String, r: String): Boolean = l.compareTo(r) > 0
 
-  println(sort(List[Int](8, 2, 1, 6, 0, 100)))
-
   println(sort(List[String]("Sameer", "Aditya", "Yoshis", "Toads", "Hammers")))
 
 }
